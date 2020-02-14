@@ -1,5 +1,11 @@
 def run_guessing_game
-  rand(6) + 1 
+  random_num = rand(6) + 1 
+  puts "Please guess a number between 1 and 6."
+  
   input = gets.chomp 
+  if input == 'exit'
+    puts 'Goodbye!'
+  elsif input == random_num
+    puts 
   
 end
